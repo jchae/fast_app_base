@@ -10,9 +10,10 @@ void main() async {
   await AppPreferences.init();
 
   runApp(EasyLocalization(
-      supportedLocales: const [Locale('en'), Locale('ko')],
-      fallbackLocale: const Locale('en'),
-      path: 'assets/translations',
-      useOnlyLangCode: true,
-      child: const App()));
+    supportedLocales: const [Locale('en'), Locale('ko')],
+    fallbackLocale: const Locale('en'),
+    path: 'assets/translations',
+    useOnlyLangCode: true,
+    child: const App(),
+  ));
 }
